@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="de" itemscope itemtype="https://schema.org/Organization">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPG – Corporate Publishing Group | Ihr Spezialist für Magazine & Printmedien in Wien</title>
+<meta name="description" content="CPG – The Corporate Publishing Group: Österreichs Spezialist für Corporate Publishing, Special Interest Magazine, Broschüren und Geschäftsberichte. Seit 2001 in Wien.">
+<meta name="keywords" content="Corporate Publishing, Magazin, Wien, Österreich, Printmedien, Special Interest Magazine, Geschäftsberichte, Broschüren, CPG">
+<meta name="author" content="CPG - The Corporate Publishing Group GmbH">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="AT-9">
+<meta name="geo.placename" content="Wien">
+<link rel="canonical" href="https://cpg.at/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="CPG – Corporate Publishing Group Wien">
+<meta property="og:description" content="Ihr Spezialist für Corporate Publishing & Special Interest Magazine seit 2001. Magazine, Broschüren und Geschäftsberichte für Unternehmen.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cpg.at/">
+<meta property="og:locale" content="de_AT">
+<meta property="og:site_name" content="CPG – Corporate Publishing Group">
+<meta property="og:image" content="https://cpg.at/img/logo.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CPG – Corporate Publishing Group Wien">
+<meta name="twitter:description" content="Ihr Spezialist für Corporate Publishing & Special Interest Magazine seit 2001.">
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CPG – The Corporate Publishing Group GmbH",
+  "alternateName": "CPG",
+  "url": "https://cpg.at",
+  "logo": "https://cpg.at/img/logo.png",
+  "description": "Österreichs Spezialist für Corporate Publishing, Special Interest Magazine, Broschüren und Geschäftsberichte seit 2001.",
+  "foundingDate": "2001",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Himmelpfortgasse 20",
+    "addressLocality": "Wien",
+    "postalCode": "1010",
+    "addressCountry": "AT"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+43-664-8250760",
+    "contactType": "sales",
+    "availableLanguage": "German"
+  },
+  "sameAs": [],
+  "employee": [
+    {
+      "@type": "Person",
+      "name": "Markus Wagner",
+      "jobTitle": "Managing Partner",
+      "email": "wagner@cpg.at"
+    },
+    {
+      "@type": "Person",
+      "name": "Stefan Schatz",
+      "jobTitle": "Managing Partner",
+      "email": "schatz@cpg.at"
+    },
+    {
+      "@type": "Person",
+      "name": "Silvia Wagner",
+      "jobTitle": "Projektmanagerin",
+      "email": "s.wagner@cpg.at"
+    }
+  ]
+}
+</script>
+
+<!-- llms.txt for AI discoverability -->
+<link rel="alternate" type="text/plain" href="/llms.txt">
+
+<!-- Preload critical assets -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" as="style">
+<link rel="preload" href="img/covers/assets.webp" as="image" type="image/webp">
+<link rel="preload" href="img/covers/stanglwirt.webp" as="image" type="image/webp">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/logo.png">
+
+<style>
+:root{--ink:#0a0a0a;--paper:#f4f2ef;--cream:#e8e4de;--blue:#5b9bb3;--blue-dark:#3d7a94;--muted:#70706a;--light-muted:#9a9a92}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;transition:background .4s,padding .4s}
+.nav.scrolled{background:rgba(10,10,10,.92);backdrop-filter:blur(12px);padding:14px 40px}
+.nav-logo img{height:30px;filter:brightness(0) invert(1)}
+.nav-menu{display:flex;gap:32px;list-style:none}
+.nav-menu a{font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.7);text-decoration:none;padding-bottom:3px;position:relative;transition:color .3s}
+.nav-menu a:hover{color:#fff}
+.nav-menu a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1.5px;background:var(--blue);transition:width .35s cubic-bezier(.16,1,.3,1)}
+.nav-menu a:hover::after{width:100%}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.nav-toggle span{width:24px;height:2px;background:#fff;transition:all .3s}
+.nav-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.nav-toggle.active span:nth-child(2){opacity:0}
+.nav-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--ink);display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(91,155,179,.08) 0%,transparent 60%);z-index:1}
+.hero-content{display:flex;flex-direction:column;justify-content:center;padding:120px 56px 80px;position:relative;z-index:2}
+.hero-overline{font-size:11px;letter-spacing:6px;text-transform:uppercase;color:var(--blue);margin-bottom:32px;display:flex;align-items:center;opacity:0;animation:fadeUp .8s ease .3s forwards}
+.blue-sq{display:inline-flex;gap:4px;margin-right:10px}
+.blue-sq span{width:7px;height:7px;background:var(--blue);display:block}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(38px,5vw,76px);font-weight:900;line-height:1;color:var(--paper);margin-bottom:28px;opacity:0;animation:fadeUp 1s ease .5s forwards}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--blue)}
+.hero-sub{font-size:16px;line-height:1.7;color:var(--light-muted);font-weight:300;max-width:420px;opacity:0;animation:fadeUp .8s ease .7s forwards}
+.hero-cta{margin-top:40px;display:inline-flex;align-items:center;gap:12px;padding:16px 36px;background:var(--blue);color:#fff;text-decoration:none;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;width:fit-content;transition:all .4s;opacity:0;animation:fadeUp .8s ease .9s forwards}
+.hero-cta:hover{background:var(--blue-dark);transform:translateY(-2px);box-shadow:0 12px 40px rgba(91,155,179,.25)}
+.hero-cta svg{transition:transform .3s}
+.hero-cta:hover svg{transform:translateX(5px)}
+
+.hero-mags{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;padding:80px 40px;perspective:1000px}
+.mag-stack{position:relative;width:320px;height:440px}
+.mag-stack-item{position:absolute;width:240px;border-radius:3px;box-shadow:0 20px 60px rgba(0,0,0,.4);transition:all .6s cubic-bezier(.16,1,.3,1);overflow:hidden}
+.mag-stack-item img{width:100%;display:block;height:auto}
+.mag-stack-item:nth-child(1){top:0;left:0;transform:rotate(-6deg);z-index:3;opacity:0;animation:s1 .8s ease .6s forwards}
+.mag-stack-item:nth-child(2){top:30px;left:70px;transform:rotate(2deg);z-index:4;opacity:0;animation:s2 .8s ease .8s forwards}
+.mag-stack-item:nth-child(3){top:65px;left:25px;transform:rotate(-2deg);z-index:2;opacity:0;animation:s3 .8s ease 1s forwards}
+.mag-stack:hover .mag-stack-item:nth-child(1){transform:rotate(-10deg) translateX(-25px)}
+.mag-stack:hover .mag-stack-item:nth-child(2){transform:rotate(5deg) translateX(25px) translateY(-8px)}
+.mag-stack:hover .mag-stack-item:nth-child(3){transform:rotate(0deg) translateY(18px)}
+
+/* SECTIONS */
+.section{padding:140px 40px}
+.section-inner{max-width:1400px;margin:0 auto}
+
+/* INTRO */
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.section-label{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
+.section-label::before{content:'';width:28px;height:2px;background:var(--blue)}
+.section h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,46px);font-weight:400;line-height:1.25}
+.section h2 strong{font-weight:900}
+.section-text{font-size:15px;line-height:1.85;color:var(--muted);font-weight:300;padding-top:12px}
+.section-text+.section-text{margin-top:16px}
+.stats{display:flex;gap:44px;margin-top:48px;padding-top:36px;border-top:1px solid var(--cream)}
+.stat-num{font-family:'Playfair Display',serif;font-size:40px;font-weight:900;line-height:1}
+.stat-num .accent{color:var(--blue)}
+.stat-lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:6px}
+
+/* USP */
+.usp{background:var(--ink);position:relative}
+.usp::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--blue),transparent)}
+.usp-head{text-align:center;margin-bottom:80px}
+.usp-head h2{color:var(--paper)}
+.usp-head h2 em{font-style:italic;color:var(--blue)}
+.usp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.04)}
+.usp-card{padding:44px 32px;background:var(--ink);transition:all .5s;position:relative;overflow:hidden}
+.usp-card::before{content:'';position:absolute;top:0;left:0;width:0;height:2px;background:var(--blue);transition:width .5s cubic-bezier(.16,1,.3,1)}
+.usp-card:hover::before{width:100%}
+.usp-card:hover{background:rgba(91,155,179,.04)}
+.usp-num{font-family:'Playfair Display',serif;font-size:48px;font-weight:900;color:rgba(91,155,179,.1);line-height:1;margin-bottom:24px}
+.usp-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--paper);margin-bottom:12px}
+.usp-card p{font-size:14px;line-height:1.75;color:var(--light-muted);font-weight:300}
+
+/* MAGAZINES */
+.mag-grid-main{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.mag-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:64px}
+.mag-header h2{font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,56px);font-weight:400;line-height:1.1}
+.mag-header h2 strong{font-weight:900}
+.mag-count{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);padding-bottom:8px}
+.mag-link{display:block;text-decoration:none;color:inherit;cursor:pointer}
+.mag-cover{width:100%;aspect-ratio:3/4;position:relative;overflow:hidden;background:var(--cream);box-shadow:0 4px 16px rgba(0,0,0,.06);transition:all .5s cubic-bezier(.16,1,.3,1)}
+.mag-cover img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.mag-link:hover .mag-cover{transform:translateY(-5px);box-shadow:0 16px 44px rgba(0,0,0,.13)}
+.mag-link:hover .mag-cover img{transform:scale(1.04)}
+.mag-ol{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.7) 0%,rgba(10,10,10,.08) 40%,transparent 100%);opacity:0;transition:opacity .4s;display:flex;align-items:flex-end;padding:16px}
+.mag-link:hover .mag-ol{opacity:1}
+.mag-ol span{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#fff}
+.mag-name{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;margin-top:14px}
+.mag-type{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:4px}
+
+/* TEAM */
+.team-sec{background:var(--cream)}
+.team-head{text-align:center;margin-bottom:72px}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px}
+.team-card{text-align:center}
+.team-img{width:160px;height:160px;border-radius:50%;margin:0 auto 24px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.08);position:relative}
+.team-img img{width:100%;height:100%;object-fit:cover}
+.team-img::after{content:'';position:absolute;inset:-3px;border-radius:50%;border:2px solid transparent;border-top-color:var(--blue);border-right-color:var(--blue);transition:transform .6s}
+.team-card:hover .team-img::after{transform:rotate(180deg)}
+.team-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:3px}
+.team-role{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--blue-dark);margin-bottom:16px;font-weight:500}
+.team-desc{font-size:13px;line-height:1.7;color:var(--muted);font-weight:300;max-width:280px;margin:0 auto 14px}
+.team-contact a{font-size:13px;color:var(--ink);text-decoration:none;transition:color .3s;display:block}
+.team-contact a:hover{color:var(--blue)}
+
+/* KONTAKT */
+.contact-sec{text-align:center}
+.contact-overline{display:flex;align-items:center;justify-content:center;gap:14px;font-size:11px;letter-spacing:6px;text-transform:uppercase;color:var(--muted);margin-bottom:32px}
+.contact-overline::before,.contact-overline::after{content:'';width:36px;height:1px;background:var(--blue)}
+.contact-sec h2{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,68px);font-weight:400;line-height:1.1;margin-bottom:36px}
+.contact-sec h2 em{font-style:italic;color:var(--blue)}
+.contact-info{font-size:15px;color:var(--muted);font-weight:300;line-height:2;margin-bottom:32px}
+
+/* CONTACT FORM */
+.contact-form{max-width:560px;margin:0 auto 40px;text-align:left}
+.form-row{margin-bottom:16px}
+.form-row label{display:block;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;font-weight:500}
+.form-row input,.form-row textarea{width:100%;padding:14px 16px;border:1px solid var(--cream);background:transparent;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--ink);outline:none;transition:border-color .3s}
+.form-row input:focus,.form-row textarea:focus{border-color:var(--blue)}
+.form-row textarea{resize:vertical;min-height:120px}
+.form-btn{display:inline-flex;align-items:center;gap:12px;padding:16px 40px;background:var(--ink);color:var(--paper);border:none;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;cursor:pointer;position:relative;overflow:hidden;transition:transform .3s}
+.form-btn::before{content:'';position:absolute;inset:0;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.form-btn:hover::before{transform:scaleX(1)}
+.form-btn:hover{transform:translateY(-2px)}
+.form-btn span,.form-btn svg{position:relative;z-index:1}
+.form-btn svg{transition:transform .3s}
+.form-btn:hover svg{transform:translateX(5px)}
+
+/* SOCIAL */
+.social-links{display:flex;justify-content:center;gap:16px;margin-top:32px}
+.social-links a{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1px solid var(--cream);color:var(--muted);transition:all .3s;text-decoration:none}
+.social-links a:hover{border-color:var(--blue);color:var(--blue)}
+
+/* FOOTER */
+footer{padding:36px 40px;background:var(--ink);display:flex;justify-content:space-between;align-items:center}
+.foot-logo img{height:22px;opacity:.5;transition:opacity .3s}
+.foot-logo:hover img{opacity:.8}
+.foot-center{font-size:11px;letter-spacing:1px;color:rgba(255,255,255,.3)}
+.foot-links{display:flex;gap:20px}
+.foot-links a{font-size:12px;color:rgba(255,255,255,.4);text-decoration:none;transition:color .3s;letter-spacing:1px}
+.foot-links a:hover{color:var(--blue)}
+
+/* COOKIE BANNER */
+.cookie-banner{position:fixed;bottom:0;left:0;right:0;background:var(--ink);color:var(--paper);padding:20px 40px;display:flex;justify-content:space-between;align-items:center;gap:20px;z-index:10000;transform:translateY(100%);transition:transform .4s ease;font-size:13px}
+.cookie-banner.show{transform:translateY(0)}
+.cookie-banner p{max-width:700px;line-height:1.6;color:rgba(255,255,255,.7)}
+.cookie-banner a{color:var(--blue)}
+.cookie-btns{display:flex;gap:12px;flex-shrink:0}
+.cookie-btn{padding:10px 24px;border:none;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-weight:600;transition:all .3s}
+.cookie-accept{background:var(--blue);color:#fff}
+.cookie-accept:hover{background:var(--blue-dark)}
+.cookie-decline{background:transparent;color:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.15)}
+.cookie-decline:hover{border-color:rgba(255,255,255,.4);color:#fff}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes s1{from{opacity:0;transform:rotate(-6deg) translateY(36px) scale(.95)}to{opacity:1;transform:rotate(-6deg)}}
+@keyframes s2{from{opacity:0;transform:rotate(2deg) translateY(36px) scale(.95)}to{opacity:1;transform:rotate(2deg)}}
+@keyframes s3{from{opacity:0;transform:rotate(-2deg) translateY(36px) scale(.95)}to{opacity:1;transform:rotate(-2deg)}}
+.reveal{opacity:0;transform:translateY(32px);transition:all .7s cubic-bezier(.16,1,.3,1)}
+.reveal.vis{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}.d5{transition-delay:.4s}.d6{transition-delay:.48s}.d7{transition-delay:.56s}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .hero{grid-template-columns:1fr}.hero-mags{display:none}
+  .usp-grid{grid-template-columns:repeat(2,1fr)}
+  .mag-grid-main{grid-template-columns:repeat(3,1fr)}
+  .intro-grid{grid-template-columns:1fr;gap:40px}
+}
+@media(max-width:768px){
+  .nav{padding:16px 20px}
+  .nav.scrolled{padding:12px 20px}
+  .nav-menu{position:fixed;top:0;right:-100%;width:70%;height:100vh;background:var(--ink);flex-direction:column;padding:80px 32px 40px;gap:24px;transition:right .4s cubic-bezier(.16,1,.3,1)}
+  .nav-menu.open{right:0}
+  .nav-menu a{font-size:14px;color:rgba(255,255,255,.8)}
+  .nav-toggle{display:flex}
+  .hero-content{padding:100px 24px 50px}
+  .section{padding:80px 20px}
+  .usp-grid{grid-template-columns:1fr}
+  .mag-grid-main{grid-template-columns:1fr 1fr;gap:14px}
+  .team-grid{grid-template-columns:1fr;gap:36px}
+  .mag-header{flex-direction:column;align-items:flex-start;gap:10px}
+  footer{flex-direction:column;gap:16px;text-align:center;padding:36px 20px}
+  .stats{flex-direction:column;gap:24px}
+  .cookie-banner{flex-direction:column;text-align:center;padding:20px}
+  .contact-form{padding:0 4px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav" role="navigation" aria-label="Hauptnavigation">
+  <a href="/" class="nav-logo" aria-label="CPG Startseite"><img src="img/logo-white.webp" alt="CPG Logo" width="120" height="33" loading="eager"></a>
+  <ul class="nav-menu" id="navMenu" role="menubar">
+    <li role="none"><a href="#ueber-uns" role="menuitem">Über uns</a></li>
+    <li role="none"><a href="#leistungen" role="menuitem">Leistungen</a></li>
+    <li role="none"><a href="#medien" role="menuitem">Medien</a></li>
+    <li role="none"><a href="#team" role="menuitem">Team</a></li>
+    <li role="none"><a href="#kontakt" role="menuitem">Kontakt</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle" aria-label="Menü öffnen" role="button" tabindex="0"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-overline"><span class="blue-sq"><span></span><span></span><span></span></span>Corporate Publishing seit 2001</div>
+    <h1>Wir machen<br><em>Magazine,</em><br>die wirken.</h1>
+    <p class="hero-sub">Die CPG zählt zu den Pionieren am heimischen Corporate Publishing Markt. Maßgeschneiderte Printmedien mit maximaler Wirkung für Ihr Unternehmen.</p>
+    <a href="#kontakt" class="hero-cta"><span>Projekt starten</span><svg width="18" height="11" viewBox="0 0 18 11" fill="none"><path d="M12.5 1L17 5.5M17 5.5L12.5 10M17 5.5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+  <div class="hero-mags" aria-hidden="true">
+    <div class="mag-stack">
+      <div class="mag-stack-item"><picture><source srcset="img/covers/assets.webp" type="image/webp"><img src="img/covers/assets.jpg" alt="assets Magazin Cover" width="240" height="320" loading="eager"></picture></div>
+      <div class="mag-stack-item"><picture><source srcset="img/covers/stanglwirt.webp" type="image/webp"><img src="img/covers/stanglwirt.jpg" alt="Stanglwirt Magazin Cover" width="240" height="320" loading="eager"></picture></div>
+      <div class="mag-stack-item"><picture><source srcset="img/covers/werte-magazin.webp" type="image/webp"><img src="img/covers/werte-magazin.jpg" alt="Werte Magazin Cover" width="240" height="320" loading="eager"></picture></div>
+    </div>
+  </div>
+</header>
+
+<!-- ÜBER UNS -->
+<section class="section" id="ueber-uns" aria-label="Über CPG">
+  <div class="section-inner intro-grid">
+    <div class="reveal">
+      <div class="section-label">Über CPG</div>
+      <h2>Pioniere im <strong>Corporate Publishing</strong> — seit über zwei Jahrzehnten.</h2>
+    </div>
+    <div class="reveal d2">
+      <p class="section-text">Gedruckte Magazine sprechen Menschen emotional an – man fühlt sie, blättert, verweilt. Studien zeigen: Printmedien werden aufmerksamer konsumiert und als glaubwürdiger empfunden als digitale Formate.</p>
+      <p class="section-text">Die CPG verbindet diese Kraft des Prints mit strategischem Know-how. Wir kreieren maßgeschneiderte Magazine für Konzerne, KMUs, Kammern und Verbände – mit dem Ziel, Ihre Zielgruppe mit maximaler Effizienz zu erreichen.</p>
+      <div class="stats">
+        <div><div class="stat-num">50<span class="accent">+</span></div><div class="stat-lbl">Kunden</div></div>
+        <div><div class="stat-num">30</div><div class="stat-lbl">Sprachen</div></div>
+        <div><div class="stat-num">5</div><div class="stat-lbl">Kontinente</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEISTUNGEN -->
+<section class="section usp" id="leistungen" aria-label="Unsere Leistungen">
+  <div class="section-inner">
+    <div class="usp-head reveal"><h2>Warum <em>CPG?</em></h2></div>
+    <div class="usp-grid">
+      <article class="usp-card reveal"><div class="usp-num">01</div><h3>Erfahrung</h3><p>Hunderte Magazine, Broschüren und Geschäftsberichte in über 20 Jahren – für Leserinnen und Leser auf fünf Kontinenten.</p></article>
+      <article class="usp-card reveal d1"><div class="usp-num">02</div><h3>Finanzierung</h3><p>Wir kreieren nicht nur starke Magazine. Wir optimieren Budgets durch smarte Refinanzierung und schlaue Vertriebswege.</p></article>
+      <article class="usp-card reveal d2"><div class="usp-num">03</div><h3>Netzwerk</h3><p>Zugriff auf ein breites Netzwerk aus Journalisten, Art-Direktoren und Grafikern. Für jedes Projekt das richtige Team.</p></article>
+      <article class="usp-card reveal d3"><div class="usp-num">04</div><h3>Unabhängigkeit</h3><p>Keine Verlagsstrukturen. Klarer Fokus, maximale Effizienz und geballte Kreativität für Ihre Marketingziele.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIEN -->
+<section class="section" id="medien" aria-label="Unsere Magazine und Medien">
+  <div class="section-inner">
+    <div class="mag-header reveal">
+      <h2>Unsere <strong>Medien</strong></h2>
+      <div class="mag-count">Ausgewählte Projekte</div>
+    </div>
+    <div class="mag-grid-main">
+      <a href="medien/assets.html" class="mag-link reveal" aria-label="assets Magazin"><div class="mag-cover"><picture><source srcset="img/covers/assets.webp" type="image/webp"><img src="img/covers/assets.jpg" alt="assets – Österreichs Wirtschaftsmagazin für Vermögen und Werte" width="600" height="800" loading="lazy"></picture><div class="mag-ol"><span>Ansehen →</span></div></div><div class="mag-name">assets</div><div class="mag-type">Corporate Magazine</div></a>
+      <a href="medien/stanglwirt.html" class="mag-link reveal d1"><div class="mag-cover"><picture><source srcset="img/covers/stanglwirt.webp" type="image/webp"><img src="img/covers/stanglwirt.jpg" alt="Stanglwirt daheim Magazin" width="600" height="800" loading="lazy"></picture><div class="mag-ol"><span>Ansehen →</span></div></div><div class="mag-name">Stanglwirt</div><div class="mag-type">Luxus & Lifestyle</div></a>
+      <a href="medien/export-jahrbuch.html" class="mag-link reveal d2"><div class="mag-cover"><picture><source srcset="img/covers/export-jahrbuch.webp" type="image/webp"><img src="img/covers/export-jahrbuch.jpg" alt="Export Jahrbuch – Österreichs internationale Unternehmen" width="600" height="800" loading="lazy"></picture><div class="mag-ol"><span>Ansehen →</span></div></div><div class="mag-name">Export Jahrbuch</div><div class="mag-type">Wirtschaftspublikation</div></a>
+      <a href="medien/werte-magazin.html" class="mag-link reveal d3"><div class="mag-cover"><picture><source srcset="img/covers/werte-magazin.webp" type="image/webp"><img src="img/covers/werte-magazin.jpg" alt="Werte Magazin von Schelhammer Capital" width="600" height="800" loading="lazy"></picture><div class="mag-ol"><span>Ansehen →</span></div></div><div class="mag-name">Werte Magazin</div><div class="mag-type">Special Interest</div></a>
+      <a href="medien/kia-magazin.html" class="mag-link reveal d4"><div class="mag-cover"><picture><source srcset="img/covers/kia-magazin.webp" type="image/webp"><img src="img/covers/kia-magazin.jpg" alt="myKia Magazin Austria" width="600" height="800" loading="lazy"></picture><div class="mag-ol"><span>Ansehen →</span></div></div><div class="mag-name">KIA Magazin</div><div class="mag-type">Brand Magazine</div></a>
+      <a href="medien/40-jahre-rcm.html" class="mag-link reveal d5"><div class="mag-cover"><picture><source srcset="img/covers/40-jahre-rcm.webp" type="image/webp"><img src="img/covers/40-jahre-rcm.jpg" alt="40 Jahre Raiffeisen Capital Management Jubiläumsmagazin" width="600" height="800" loading="lazy"></picture><div class="mag-ol"><span>Ansehen →</span></div></div><div class="mag-name">40 Jahre RCM</div><div class="mag-type">Jubiläumspublikation</div></a>
+      <a href="medien/ffg.html" class="mag-link reveal d6"><div class="mag-cover"><picture><source srcset="img/covers/ffg.webp" type="image/webp"><img src="img/covers/ffg.jpg" alt="Finanzfuchsgruppe MEHRLEBEN Magazin" width="600" height="800" loading="lazy"></picture><div class="mag-ol"><span>Ansehen →</span></div></div><div class="mag-name">Finanzfuchsgruppe</div><div class="mag-type">Corporate Magazine</div></a>
+      <a href="medien/business.html" class="mag-link reveal d7"><div class="mag-cover"><picture><source srcset="img/covers/business.webp" type="image/webp"><img src="img/covers/business.jpg" alt="business Finanzmagazin Raiffeisen Oberösterreich" width="600" height="800" loading="lazy"></picture><div class="mag-ol"><span>Ansehen →</span></div></div><div class="mag-name">business</div><div class="mag-type">Finanzmagazin</div></a>
+      <a href="medien/pierer.html" class="mag-link reveal"><div class="mag-cover"><picture><source srcset="img/covers/pierer.webp" type="image/webp"><img src="img/covers/pierer.jpg" alt="Pierer Almwellness Hotel Jubiläumsmagazin" width="600" height="800" loading="lazy"></picture><div class="mag-ol"><span>Ansehen →</span></div></div><div class="mag-name">PIERER</div><div class="mag-type">Jubiläumsmagazin</div></a>
+      <a href="medien/spusu.html" class="mag-link reveal d1"><div class="mag-cover"><picture><source srcset="img/covers/spusu.webp" type="image/webp"><img src="img/covers/spusu.jpg" alt="spusu Magazin – Mobilfunkanbieter Österreich" width="600" height="800" loading="lazy"></picture><div class="mag-ol"><span>Ansehen →</span></div></div><div class="mag-name">spusu Magazin</div><div class="mag-type">Corporate Magazine</div></a>
+      <a href="medien/2morrow.html" class="mag-link reveal d2"><div class="mag-cover"><picture><source srcset="img/covers/2morrow.webp" type="image/webp"><img src="img/covers/2morrow.jpg" alt="2morrow Nachhaltigkeitsmagazin" width="600" height="800" loading="lazy"></picture><div class="mag-ol"><span>Ansehen →</span></div></div><div class="mag-name">2morrow</div><div class="mag-type">Zukunftsmagazin</div></a>
+      <a href="medien/depot.html" class="mag-link reveal d3"><div class="mag-cover"><picture><source srcset="img/covers/depot.webp" type="image/webp"><img src="img/covers/depot.jpg" alt="DEPOT Weihnachtsmagazin 25 Jahre Jubiläum" width="600" height="800" loading="lazy"></picture><div class="mag-ol"><span>Ansehen →</span></div></div><div class="mag-name">DEPOT</div><div class="mag-type">Lifestyle Magazine</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section team-sec" id="team" aria-label="Unser Team">
+  <div class="section-inner">
+    <div class="team-head reveal"><h2>Das <strong>Team</strong></h2></div>
+    <div class="team-grid">
+      <article class="team-card reveal" itemscope itemtype="https://schema.org/Person">
+        <div class="team-img"><picture><source srcset="img/team/markus-wagner.webp" type="image/webp"><img src="img/team/markus-wagner.jpg" alt="Markus Wagner, Managing Partner der CPG" width="160" height="160" loading="lazy" itemprop="image"></picture></div>
+        <h3 itemprop="name">Markus Wagner</h3><div class="team-role" itemprop="jobTitle">Managing Partner</div>
+        <p class="team-desc" itemprop="description">Leitet Akquisition und Kundenbetreuung. Kreiert für jeden Kunden die bestmögliche Lösung in allen Medienfragen.</p>
+        <div class="team-contact"><a href="/cdn-cgi/l/email-protection#4d3a2c2a23283f0d2e3d2a632c39" itemprop="email"><span class="__cf_email__" data-cfemail="fe899f99909b8cbe9d8e99d09f8a">[email&#160;protected]</span></a><a href="tel:+436641415878" itemprop="telephone">+43 664 14 15 878</a></div>
+      </article>
+      <article class="team-card reveal d1" itemscope itemtype="https://schema.org/Person">
+        <div class="team-img"><picture><source srcset="img/team/stefan-schatz.webp" type="image/webp"><img src="img/team/stefan-schatz.jpg" alt="Stefan Schatz, Managing Partner der CPG" width="160" height="160" loading="lazy" itemprop="image"></picture></div>
+        <h3 itemprop="name">Stefan Schatz</h3><div class="team-role" itemprop="jobTitle">Managing Partner</div>
+        <p class="team-desc" itemprop="description">Leitet die kreativen und redaktionellen Aufgaben. Verwandelt Unternehmensmedien in hervorragend funktionierende Magazine.</p>
+        <div class="team-contact"><a href="/cdn-cgi/l/email-protection#82f1e1eae3f6f8c2e1f2e5ace3f6" itemprop="email"><span class="__cf_email__" data-cfemail="4b3828232a3f310b283b2c652a3f">[email&#160;protected]</span></a><a href="tel:+436648250760" itemprop="telephone">+43 664 82 50 760</a></div>
+      </article>
+      <article class="team-card reveal d2" itemscope itemtype="https://schema.org/Person">
+        <div class="team-img"><picture><source srcset="img/team/silvia-wagner.webp" type="image/webp"><img src="img/team/silvia-wagner.jpg" alt="Silvia Wagner, Projektmanagerin der CPG" width="160" height="160" loading="lazy" itemprop="image"></picture></div>
+        <h3 itemprop="name">Silvia Wagner</h3><div class="team-role" itemprop="jobTitle">Projektmanagerin</div>
+        <p class="team-desc" itemprop="description">Hat die organisatorische Oberhoheit inne. Sorgt für fehlerfreie Umsetzung und administrative Verwaltung aller Medienprojekte.</p>
+        <div class="team-contact"><a href="/cdn-cgi/l/email-protection#cab9e4bdabada4afb88aa9baade4abbe" itemprop="email"><span class="__cf_email__" data-cfemail="72015c0513151c1700321102155c1306">[email&#160;protected]</span></a><a href="tel:+436643338087" itemprop="telephone">+43 664 33 38 087</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="section contact-sec" id="kontakt" aria-label="Kontakt">
+  <div class="section-inner">
+    <div class="contact-overline reveal">Kontakt</div>
+    <h2 class="reveal d1">Lassen Sie uns<br><em>reden.</em></h2>
+    <p class="contact-info reveal d2">PG The Corporate Publishing Group GmbH<br>Himmelpfortgasse 20 · 1010 Wien<br>+43 (0) 664 82 50 760</p>
+    <form class="contact-form reveal d3" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" aria-label="Kontaktformular">
+      <div class="form-row"><label for="name">Name</label><input type="text" id="name" name="name" required autocomplete="name"></div>
+      <div class="form-row"><label for="email">E-Mail</label><input type="email" id="email" name="email" required autocomplete="email"></div>
+      <div class="form-row"><label for="message">Nachricht</label><textarea id="message" name="message" required></textarea></div>
+      <button type="submit" class="form-btn"><span>Nachricht senden</span><svg width="18" height="11" viewBox="0 0 18 11" fill="none"><path d="M12.5 1L17 5.5M17 5.5L12.5 10M17 5.5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </form>
+    <nav class="social-links reveal d4" aria-label="Social Media Links">
+      <a href="https://linkedin.com/company/cpg-at" target="_blank" rel="noopener noreferrer" aria-label="CPG auf LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="CPG auf Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="CPG auf Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+    </nav>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <a href="/" class="foot-logo" aria-label="CPG Startseite"><img src="img/logo-white.webp" alt="CPG" width="96" height="26" loading="lazy"></a>
+  <div class="foot-center">© 2026 CPG — Corporate Publishing Group</div>
+  <nav class="foot-links" aria-label="Rechtliches"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></nav>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie-Hinweis">
+  <p>Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. <a href="/datenschutz.html">Mehr erfahren</a></p>
+  <div class="cookie-btns">
+    <button class="cookie-btn cookie-decline" id="cookieDecline">Ablehnen</button>
+    <button class="cookie-btn cookie-accept" id="cookieAccept">Akzeptieren</button>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// Nav scroll
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>60)},{passive:true});
+
+// Mobile menu
+const toggle=document.getElementById('navToggle'),menu=document.getElementById('navMenu');
+toggle.addEventListener('click',()=>{toggle.classList.toggle('active');menu.classList.toggle('open')});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{toggle.classList.remove('active');menu.classList.remove('open')}));
+
+// Reveal on scroll
+const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('vis')})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Cookie banner
+(function(){
+  const b=document.getElementById('cookieBanner');
+  

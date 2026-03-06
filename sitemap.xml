@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://cpg.at/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://cpg.at/medien/assets.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cpg.at/medien/stanglwirt.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cpg.at/medien/export-jahrbuch.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cpg.at/medien/werte-magazin.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cpg.at/medien/kia-magazin.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cpg.at/medien/40-jahre-rcm.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cpg.at/medien/ffg.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cpg.at/medien/business.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cpg.at/medien/pierer.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cpg.at/medien/spusu.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cpg.at/medien/2morrow.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cpg.at/medien/depot.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+</urlset>
