@@ -26,7 +26,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);o
 /* NAV */
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:26px 48px;display:flex;justify-content:space-between;align-items:center;transition:background .4s,padding .4s}
 .nav.scrolled{background:rgba(42,42,42,.95);backdrop-filter:blur(12px);padding:18px 48px}
-.nav-logo img{height:40px}
+.nav-logo img{height:40px;width:auto;max-width:140px;object-fit:contain}
 .nav-menu{display:flex;gap:36px;list-style:none}
 .nav-menu a{font-size:13px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.7);text-decoration:none;padding-bottom:4px;position:relative;transition:color .3s}
 .nav-menu a:hover{color:#fff}
@@ -195,7 +195,7 @@ footer{padding:40px 48px;background:var(--dark);display:flex;justify-content:spa
 }
 @media(max-width:768px){
 .nav{padding:16px 20px}.nav.scrolled{padding:14px 20px}
-.nav-logo img{height:32px}
+.nav-logo img{height:30px;width:auto}
 .nav-menu{position:fixed;top:0;right:-100%;width:75%;height:100vh;background:var(--dark);flex-direction:column;padding:80px 32px 40px;gap:28px;transition:right .4s cubic-bezier(.16,1,.3,1)}.nav-menu.open{right:0}
 .nav-menu a{font-size:15px;color:rgba(255,255,255,.8)}
 .nav-toggle{display:flex}
@@ -235,7 +235,7 @@ footer{flex-direction:column;gap:16px;text-align:center;padding:36px 20px}
 <body>
 
 <nav class="nav" id="nav" role="navigation" aria-label="Hauptnavigation">
-  <a href="/" class="nav-logo" aria-label="CPG Startseite"><img src="img/logo-white.webp" alt="CPG Logo" width="160" height="44" loading="eager"></a>
+  <a href="/" class="nav-logo" aria-label="CPG Startseite"><img src="img/logo-white.webp" alt="CPG Logo" loading="eager" style="height:40px;width:auto"></a>
   <ul class="nav-menu" id="navMenu" role="menubar">
     <li role="none"><a href="#ueber-uns" role="menuitem">Über uns</a></li>
     <li role="none"><a href="#leistungen" role="menuitem">Leistungen</a></li>
@@ -369,7 +369,7 @@ footer{flex-direction:column;gap:16px;text-align:center;padding:36px 20px}
 </section>
 
 <footer role="contentinfo">
-  <a href="/" class="foot-logo"><img src="img/logo-white.webp" alt="CPG" width="112" height="31" loading="lazy"></a>
+  <a href="/" class="foot-logo"><img src="img/logo-white.webp" alt="CPG" loading="lazy" style="height:28px;width:auto"></a>
   <div class="foot-center">© 2026 CPG — The Corporate Publishing Group GmbH</div>
   <nav class="foot-links" aria-label="Rechtliches"><a href="/impressum.html">Datenschutz / Impressum / Offenlegung</a><a href="/agb.pdf" target="_blank">AGB</a></nav>
 </footer>

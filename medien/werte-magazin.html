@@ -39,8 +39,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:#2a2a2a;over
 .detail-content h1{font-family:'Playfair Display',serif;font-size:clamp(38px,5vw,72px);font-weight:900;line-height:1.05;color:var(--paper);margin-bottom:24px;opacity:0;animation:fadeUp .8s ease .4s forwards}
 .detail-text{font-size:16px;line-height:1.85;color:var(--light-muted);font-weight:300;max-width:500px;opacity:0;animation:fadeUp .8s ease .6s forwards}
 .detail-cover{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;padding:120px 48px 80px}
-.cover-wrap{position:relative;max-width:340px;width:100%}
-.cover-wrap img{width:100%;display:block;box-shadow:0 28px 70px rgba(0,0,0,.35);border-radius:2px;opacity:0;animation:coverIn 1s ease .5s forwards}
+.cover-wrap{position:relative;max-width:340px;width:100%;margin:0 auto}
+.cover-wrap img{width:100%;height:auto;display:block;box-shadow:0 28px 70px rgba(0,0,0,.35);border-radius:2px;opacity:0;animation:coverIn 1s ease .5s forwards}
 .cover-wrap::before{content:'';position:absolute;top:-10px;left:-10px;right:60%;bottom:60%;border-top:2px solid var(--blue);border-left:2px solid var(--blue);opacity:0;animation:fadeIn .6s ease 1.2s forwards}
 .cover-wrap::after{content:'';position:absolute;bottom:-10px;right:-10px;left:60%;top:60%;border-bottom:2px solid var(--blue);border-right:2px solid var(--blue);opacity:0;animation:fadeIn .6s ease 1.2s forwards}
 .back-sec{padding:72px 40px;text-align:center}
@@ -58,12 +58,12 @@ footer{padding:36px 40px;background:var(--dark);display:flex;justify-content:spa
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 @keyframes coverIn{from{opacity:0;transform:translateY(28px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@media(max-width:1024px){.detail{grid-template-columns:1fr;min-height:auto}.detail-cover{padding:40px 40px 72px}.cover-wrap{max-width:260px}}
-@media(max-width:768px){.nav{padding:16px 20px}.detail-content{padding:90px 24px 36px}.detail-cover{padding:20px 24px 56px}.cover-wrap{max-width:200px}.back-sec{padding:48px 20px}footer{flex-direction:column;gap:16px;text-align:center;padding:36px 20px}}
+@media(max-width:1024px){.detail{grid-template-columns:1fr;min-height:auto}.detail-cover{padding:32px 40px 60px}.cover-wrap{max-width:280px}}
+@media(max-width:768px){.nav{padding:16px 20px}.nav-logo img{height:30px;width:auto;max-width:120px}.detail-content{padding:90px 20px 30px}.detail-content h1{font-size:clamp(28px,8vw,42px)}.detail-text{font-size:15px}.detail-cover{padding:16px 20px 48px}.cover-wrap{max-width:240px}.cover-wrap::before,.cover-wrap::after{display:none}.back-sec{padding:40px 20px}footer{flex-direction:column;gap:16px;text-align:center;padding:36px 20px}}
 </style>
 </head>
 <body>
-<nav class="nav"><a href="/" class="nav-logo"><img src="../img/logo-white.webp" alt="CPG Logo" width="160" height="44"></a><a href="/#medien" class="nav-back"><svg width="18" height="11" viewBox="0 0 18 11" fill="none"><path d="M5.5 1L1 5.5M1 5.5L5.5 10M1 5.5H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Alle Medien</a></nav>
+<nav class="nav"><a href="/" class="nav-logo"><img src="../img/logo-white.webp" alt="CPG Logo" style="height:40px;width:auto"></a><a href="/#medien" class="nav-back"><svg width="18" height="11" viewBox="0 0 18 11" fill="none"><path d="M5.5 1L1 5.5M1 5.5L5.5 10M1 5.5H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Alle Medien</a></nav>
 <main>
 <section class="detail">
   <div class="detail-content">
@@ -72,11 +72,11 @@ footer{padding:36px 40px;background:var(--dark);display:flex;justify-content:spa
     <p class="detail-text">Wer Geschaffenes absichern und Lebensleistungen bewahren will, kommt am Magazin „Werte" von Schelhammer Capital nicht vorbei. Zweimal jährlich informiert Österreichs stärkste Privatbank damit Kunden und Interessierte über Veränderungen auf Finanzmärkten, Veranlagungsprodukte und Portraits erfolgreicher Unternehmer.</p>
   </div>
   <div class="detail-cover">
-    <div class="cover-wrap"><picture><source srcset="../img/covers/werte-magazin.webp" type="image/webp"><img src="../img/covers/werte-magazin.jpg" alt="Werte Magazin – Schelhammer Capital Privatbank" width="340" height="453" style="aspect-ratio:3/4;object-fit:cover" loading="eager"></picture></div>
+    <div class="cover-wrap"><picture><source srcset="../img/covers/werte-magazin.webp" type="image/webp"><img src="../img/covers/werte-magazin.jpg" alt="Werte Magazin – Schelhammer Capital Privatbank" style="width:100%;height:auto;max-width:340px" loading="eager"></picture></div>
   </div>
 </section>
 <section class="back-sec"><a href="/#medien" class="back-btn"><svg width="18" height="11" viewBox="0 0 18 11" fill="none"><path d="M5.5 1L1 5.5M1 5.5L5.5 10M1 5.5H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Zurück zur Übersicht</span></a></section>
 </main>
-<footer><a href="/" class="foot-logo"><img src="../img/logo-white.webp" alt="CPG" width="112" height="31" loading="lazy"></a><div class="foot-center">© 2026 CPG — Corporate Publishing Group</div><nav class="foot-links"><a href="/impressum.html">Datenschutz / Impressum / Offenlegung</a><a href="/agb.pdf" target="_blank">AGB</a></nav></footer>
+<footer><a href="/" class="foot-logo"><img src="../img/logo-white.webp" alt="CPG" style="height:28px;width:auto" loading="lazy"></a><div class="foot-center">© 2026 CPG — Corporate Publishing Group</div><nav class="foot-links"><a href="/impressum.html">Datenschutz / Impressum / Offenlegung</a><a href="/agb.pdf" target="_blank">AGB</a></nav></footer>
 </body>
 </html>
