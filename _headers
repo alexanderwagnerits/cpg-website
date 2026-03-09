@@ -1,21 +1,47 @@
-/*
-  X-Frame-Options: SAMEORIGIN
+# HTML - Kurz cachen (Änderungen schnell sichtbar)
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate, stale-while-revalidate=86400
   X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
 
+# CSS/JS - Lang cachen (mit Hash-Versionierung)
+/css/*
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# Images - 7 Tage cachen
 /img/*
+/medien/*
+*.webp
+*.jpg
+*.png
+*.jpeg
+  Cache-Control: public, max-age=604800, stale-while-revalidate=604800
+
+# Favicon - Sehr lang cachen
+/favicon.svg
+/favicon-*.png
+/apple-touch-icon.png
+/browserconfig.xml
   Cache-Control: public, max-age=31536000, immutable
 
-/medien/*
-  Cache-Control: public, max-age=604800
+# Manifest - 1 Stunde
+/manifest.json
+  Cache-Control: public, max-age=3600, must-revalidate
 
-/*.html
-  Cache-Control: public, max-age=3600
-
+# Sitemap/Robots - 1 Tag
 /sitemap.xml
+/robots.txt
   Cache-Control: public, max-age=86400
 
-/
-  Cache-Control: public, max-age=1800
+# Security Headers für ALLE
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
