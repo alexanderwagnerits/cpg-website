@@ -63,7 +63,7 @@ footer{padding:36px 48px;background:var(--dark);display:flex;justify-content:spa
 .foot-links{display:flex;gap:12px;align-items:center}
 .foot-links a{display:inline-flex;align-items:center;gap:6px;font-size:11px;padding:8px 14px;border-radius:20px;background:rgba(91,155,179,.08);color:rgba(255,255,255,.6);text-decoration:none;letter-spacing:.5px;transition:all .3s cubic-bezier(.16,1,.3,1);border:1px solid transparent}
 .foot-links a:hover{background:rgba(91,155,179,.15);color:var(--blue);border-color:var(--blue);transform:translateY(-2px)}
-.foot-links a::before{content:'•';opacity:.4}.foot-links a:first-child::before{content:none}
+.foot-links a+a::before{content:'•';opacity:.4}
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 @keyframes coverIn{from{opacity:0;transform:translateY(28px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
