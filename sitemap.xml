@@ -1,16 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://cpg.at/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://cpg.at/medien/assets.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cpg.at/medien/stanglwirt.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cpg.at/medien/export-jahrbuch.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cpg.at/medien/werte-magazin.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cpg.at/medien/kia-magazin.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cpg.at/medien/40-jahre-rcm.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cpg.at/medien/ffg.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cpg.at/medien/business.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cpg.at/medien/pierer.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cpg.at/medien/spusu.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cpg.at/medien/2morrow.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cpg.at/medien/depot.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- HOMEPAGE -->
+  <url>
+    <loc>https://cpg.at/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/logo.png</image:loc>
+      <image:title>CPG Logo</image:title>
+    </image:image>
+  </url>
+
+  <!-- MEDIEN PAGES -->
+  <url>
+    <loc>https://cpg.at/medien/stanglwirt.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/covers/stanglwirt.jpg</image:loc>
+      <image:title>Stanglwirt Magazine Cover</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://cpg.at/medien/kia-magazin.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/covers/kia-magazin.jpg</image:loc>
+      <image:title>KIA Magazin Cover</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://cpg.at/medien/spusu.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/covers/spusu.jpg</image:loc>
+      <image:title>spusu Magazin Cover</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://cpg.at/medien/assets.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/covers/assets.jpg</image:loc>
+      <image:title>assets Magazin Cover</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://cpg.at/medien/business.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/covers/business.jpg</image:loc>
+      <image:title>business Magazin Cover</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://cpg.at/medien/depot.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/covers/depot.jpg</image:loc>
+      <image:title>DEPOT Magazin Cover</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://cpg.at/medien/pierer.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/covers/pierer.jpg</image:loc>
+      <image:title>PIERER Magazin Cover</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://cpg.at/medien/ffg.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/covers/ffg.jpg</image:loc>
+      <image:title>Finanzfuchs Magazin Cover</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://cpg.at/medien/werte-magazin.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/covers/werte-magazin.jpg</image:loc>
+      <image:title>Werte Magazin Cover</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://cpg.at/medien/2morrow.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/covers/2morrow.jpg</image:loc>
+      <image:title>2morrow Magazin Cover</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://cpg.at/medien/export-jahrbuch.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/covers/export-jahrbuch.jpg</image:loc>
+      <image:title>Export Jahrbuch Cover</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://cpg.at/medien/40-jahre-rcm.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cpg.at/img/covers/40-jahre-rcm.jpg</image:loc>
+      <image:title>40 Jahre RCM Cover</image:title>
+    </image:image>
+  </url>
+
+  <!-- LEGAL PAGES -->
+  <url>
+    <loc>https://cpg.at/impressum.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
