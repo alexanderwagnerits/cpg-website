@@ -1,4 +1,35 @@
+# Standard Rules
 User-agent: *
 Allow: /
 Disallow: /impressum.html
+Disallow: /datenschutz.html
+Crawl-delay: 1
+Request-rate: 30/1m
+
+# Google spezifisch
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing spezifisch
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# AdsBot erlauben
+User-agent: AdsBot-Google
+Allow: /
+
+# Facebook Crawler
+User-agent: facebookexternalhit
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemaps
 Sitemap: https://cpg.at/sitemap.xml
+
+# Host (wichtig für alte Domain!)
+Host: https://cpg.at
