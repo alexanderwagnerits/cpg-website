@@ -1,8 +1,16 @@
 # Standard Rules
 User-agent: *
 Allow: /
-Disallow: /impressum.html
-Disallow: /datenschutz.html
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-json/
+Disallow: /xmlrpc.php
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /?s=
+Disallow: /feed/
+Disallow: /feed
+Disallow: /comments/feed/
 Crawl-delay: 1
 Request-rate: 30/1m
 
@@ -30,6 +38,3 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://cpg.at/sitemap.xml
-
-# Host (wichtig für alte Domain!)
-Host: https://cpg.at

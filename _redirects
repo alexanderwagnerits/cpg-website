@@ -31,3 +31,28 @@
 /export-jahrbuch       /medien/export-jahrbuch.html 301
 /40-jahre-rcm/         /medien/40-jahre-rcm.html   301
 /40-jahre-rcm          /medien/40-jahre-rcm.html   301
+
+# Alte Standard-Seiten (WordPress)
+/ueber-uns/            /    301
+/ueber-uns             /    301
+/kontakt/              /    301
+/kontakt               /    301
+/leistungen/           /    301
+/leistungen            /    301
+/team/                 /    301
+/team                  /    301
+/portfolio/            /    301
+/portfolio             /    301
+/referenzen/           /    301
+/referenzen            /    301
+/impressum/            /impressum.html    301
+/impressum             /impressum.html    301
+/datenschutz/          /impressum.html    301
+/datenschutz           /impressum.html    301
+
+# WordPress System-URLs (404 vermeiden)
+/wp-admin/*            /    301
+/wp-login.php          /    301
+/xmlrpc.php            /    301
+/feed/                 /    301
+/feed                  /    301
