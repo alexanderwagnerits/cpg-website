@@ -57,5 +57,23 @@
 /feed/                 /    301
 /feed                  /    301
 
+# Statische HTML-Dateien direkt ausliefern (verhindert Redirect-Schleifen durch Catch-All)
+/index.html            /index.html          200
+/impressum.html        /impressum.html      200
+/datenschutz.html      /datenschutz.html    200
+/404.html              /404.html            200
+/medien/stanglwirt.html      /medien/stanglwirt.html      200
+/medien/kia-magazin.html     /medien/kia-magazin.html     200
+/medien/spusu.html           /medien/spusu.html           200
+/medien/assets.html          /medien/assets.html          200
+/medien/business.html        /medien/business.html        200
+/medien/depot.html           /medien/depot.html           200
+/medien/pierer.html          /medien/pierer.html          200
+/medien/ffg.html             /medien/ffg.html             200
+/medien/werte-magazin.html   /medien/werte-magazin.html   200
+/medien/2morrow.html         /medien/2morrow.html         200
+/medien/export-jahrbuch.html /medien/export-jahrbuch.html 200
+/medien/40-jahre-rcm.html    /medien/40-jahre-rcm.html    200
+
 # Catch-all: Nicht gefundene Seiten → 404 (verhindert Redirect-Schleifen)
 /*                     /404.html    404
