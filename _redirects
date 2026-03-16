@@ -56,3 +56,6 @@
 /xmlrpc.php            /    301
 /feed/                 /    301
 /feed                  /    301
+
+# Catch-all: Nicht gefundene Seiten → 404 (verhindert Redirect-Schleifen)
+/*                     /404.html    404
