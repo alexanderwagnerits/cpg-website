@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Crawl-delay: 1
 
 User-agent: Googlebot
 Allow: /
@@ -15,6 +14,18 @@ User-agent: facebookexternalhit
 Allow: /
 
 User-agent: LinkedInBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
 
 Sitemap: https://cpg.at/sitemap.xml
